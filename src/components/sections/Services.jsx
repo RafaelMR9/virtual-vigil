@@ -8,7 +8,7 @@ import { SiFastly } from "react-icons/si"
 
 export default function Services() {
   return (
-    <section className="h-screen px-32 relative overflow-hidden">
+    <section id="services" className="min-h-screen px-32 relative overflow-hidden">
       <svg viewBox="0 0 1024 1024" className="absolute -right-[16rem] top-18 -z-1 h-[32rem] w-[32rem] [mask-image:radial-gradient(closest-side,white,transparent)]">
         <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.5" />
         <defs>
@@ -33,7 +33,7 @@ export default function Services() {
         monitoramento de rede em tempo real. Com um compromisso inabalável com a inovação e a satisfação do cliente, nossa equipe de 
         especialistas está dedicada a desenvolver tecnologias que protegem e empoderam usuários em todo o mundo, garantindo uma 
         experiência online segura e sem preocupações. Priorizamos a personalização de nossos serviços para atender às necessidades 
-        únicas de cada cliente, estabelecendo novos padrões de excelência em segurança cibernética.
+        únicas de cada cliente, estabelecendo novos padrões de excelência em segurança virtual.
       </p>
       <div className="flex items-center justify-center mb-16">
         <div className="w-[25%] h-[1px] bg-violet-700"></div>

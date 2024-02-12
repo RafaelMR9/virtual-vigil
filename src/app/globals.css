@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 * {
-    z-index: 20;
+    z-index: 60;
+}
+
+.quote-height {
+    line-height: 0.4 !important;
 }
