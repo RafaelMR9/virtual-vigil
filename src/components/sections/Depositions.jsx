@@ -2,7 +2,7 @@ import Deposition from "../ui/Deposition"
 
 export default function Depositions() {
   return (
-    <section id="depositions" className="relative min-h-screen px-32 overflow-hidden">
+    <section id="depositions" className="relative min-h-screen px-8 md:px-20 lg:px-32 mt-16 overflow-hidden">
       <svg viewBox="0 0 1024 1024" className="absolute -left-[20rem] top-[8rem] -z-1 h-[40rem] w-[40rem] [mask-image:radial-gradient(closest-side,white,transparent)]">
         <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.5" />
         <defs>
@@ -25,12 +25,12 @@ export default function Depositions() {
       <p className="text-center text-gray-400 mb-4">
         Veja os depoimentos de alguns de nossos clientes!
       </p>
-      <div className="flex items-center justify-center mb-16">
+      <div className="flex items-center justify-center mb-10">
         <div className="w-[25%] h-[1px] bg-violet-700"></div>
         <div className="w-4 h-4 bg-violet-700 mx-2"></div>
         <div className="w-[25%] h-[1px] bg-violet-700"></div>
       </div>
-      <div className="grid grid-cols 1 md:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
         <Deposition 
           profile='profile1.jpg' 
           deposition="Desde que comecei a usar Virtual Vigil, nunca mais tive problemas com malware. A proteção em tempo real realmente faz a diferença. Recomendo fortemente para quem procura tranquilidade online." 

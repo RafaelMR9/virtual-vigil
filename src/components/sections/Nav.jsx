@@ -7,6 +7,7 @@ import { FaShieldVirus } from "react-icons/fa6"
 export default function Nav() {
 
   const [activeSection, setActiveSection] = useState('')
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(() => {
     let debounceTimer
@@ -51,13 +52,26 @@ export default function Nav() {
       })
 
       setActiveSection(sectionId)
+      setIsMenuOpen(false)
     }
   }
 
   return (
     <nav className="bg-slate-800 rounded-full shadow-xl flex justify-between items-center fixed top-0 left-0 right-0 px-8 py-4 mt-4 mx-10 z-[999]">
       <Link href="#home" className="flex items-center gap-1 font-bold text-2xl"><FaShieldVirus /> Virtual Vigil</Link>
-      <div className="flex gap-12 mt-1 font-semibold">
+      <button 
+        type="button" 
+        className="inline-flex items-center p-2 w-8 h-8 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" 
+        aria-controls="navbar-default" 
+        aria-expanded={isMenuOpen}
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      >
+        <span className="sr-only">Open main menu</span>
+        <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+      <div className={`lg:flex gap-12 mt-1 font-semibold ${isMenuOpen ? 'flex flex-col' : 'hidden'}`} id="navbar-default">
         <Link 
           href="#home" 
           onClick={(e) => handleScrollToSection(e, 'home')}
@@ -89,7 +103,6 @@ export default function Nav() {
           Contato
         </Link>
       </div>
-      <div />
     </nav>
   )
 }

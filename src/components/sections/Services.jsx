@@ -8,18 +8,9 @@ import { SiFastly } from "react-icons/si"
 
 export default function Services() {
   return (
-    <section id="services" className="min-h-screen px-32 relative overflow-hidden">
+    <section id="services" className="px-10 pb-10 relative overflow-hidden">
       <svg viewBox="0 0 1024 1024" className="absolute -right-[16rem] top-18 -z-1 h-[32rem] w-[32rem] [mask-image:radial-gradient(closest-side,white,transparent)]">
         <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.5" />
-        <defs>
-          <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-            <stop stopColor="#7775D6" />
-            <stop offset="1" stopColor="#E935C1" />
-          </radialGradient>
-        </defs>
-      </svg>
-      <svg viewBox="0 0 1024 1024" className="absolute -left-[22rem] top-[12rem] -z-1 h-[32rem] w-[32rem] [mask-image:radial-gradient(closest-side,white,transparent)]">
-        <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.2" />
         <defs>
           <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
             <stop stopColor="#7775D6" />
@@ -35,12 +26,12 @@ export default function Services() {
         experiência online segura e sem preocupações. Priorizamos a personalização de nossos serviços para atender às necessidades 
         únicas de cada cliente, estabelecendo novos padrões de excelência em segurança virtual.
       </p>
-      <div className="flex items-center justify-center mb-16">
+      <div className="flex items-center justify-center mb-10">
         <div className="w-[25%] h-[1px] bg-violet-700"></div>
         <div className="w-4 h-4 bg-violet-700 mx-2"></div>
         <div className="w-[25%] h-[1px] bg-violet-700"></div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 xl:gap-8">
         <Service 
           icon={<MdSecurity size={100}/>} 
           title="Guardião Digital" 
@@ -68,7 +59,7 @@ export default function Services() {
         />
         <Service 
           icon={<BsPersonCheck size={100}/>} 
-          title="Consultor de Privacidade" 
+          title="Privacidade Pro" 
           description="Avaliação personalizada de segurança para fortalecer sua privacidade online contra vazamentos de dados." 
         />
       </div>

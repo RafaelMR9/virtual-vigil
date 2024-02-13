@@ -1,9 +1,9 @@
 
 export default function Plans() {
   return (
-    <section id="plans" className="min-h-screen px-32 overflow-hidden">
+    <section id="plans" className="px-8 md:px-20 lg:px-32 mt-8 overflow-hidden">
       <h1 className="text-5xl font-extrabold text-center mb-4"><span className="text-violet-600">Nossos</span> Planos</h1>
-      <div className="flex items-center justify-center mb-16">
+      <div className="flex items-center justify-center mb-10">
         <div className="w-[25%] h-[1px] bg-violet-700"></div>
         <div className="w-4 h-4 bg-violet-700 mx-2"></div>
         <div className="w-[25%] h-[1px] bg-violet-700"></div>
