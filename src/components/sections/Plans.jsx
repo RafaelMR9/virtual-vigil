@@ -23,7 +23,16 @@ export default function Plans() {
   ]
 
   return (
-    <section id="plans" className="px-8 mt-8 overflow-hidden">
+    <section id="plans" className="relative px-8 mt-8 overflow-hidden">
+      <svg viewBox="0 0 1024 1024" className="hidden sm:block lg:hidden  absolute -left-[42rem] top-[12rem] -z-10 h-[64rem] w-[64rem] [mask-image:radial-gradient(closest-side,white,transparent)]">
+        <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.3" />
+        <defs>
+          <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+            <stop stopColor="#7775D6" />
+            <stop offset="1" stopColor="#E935C1" />
+          </radialGradient>
+        </defs>
+      </svg>
       <h1 className="text-5xl font-extrabold text-center mb-4"><span className="text-violet-600">Nossos</span> Planos</h1>
       <div className="flex items-center justify-center mb-10">
         <div className="w-[25%] h-[1px] bg-violet-700"></div>

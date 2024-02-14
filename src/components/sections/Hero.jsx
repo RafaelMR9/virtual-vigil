@@ -3,7 +3,7 @@ import { FaShieldVirus, FaCartShopping } from "react-icons/fa6"
 export default function Hero() {
   return ( 
     <section id="home" className="min-h-screen flex flex-col justify-center align-center text-center px-8 md:px-20 lg:px-32 pt-16 relative overflow-hidden">
-      <svg viewBox="0 0 1024 1024" className="absolute left-1/2 -top-[42rem] -z-1 h-[76rem] w-[76rem] [mask-image:radial-gradient(closest-side,white,transparent)] -translate-x-1/2 translate-y-0">
+      <svg viewBox="0 0 1024 1024" className="absolute left-1/2 -top-[42rem] -z-10 h-[76rem] w-[76rem] [mask-image:radial-gradient(closest-side,white,transparent)] -translate-x-1/2 translate-y-0">
         <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.5" />
         <defs>
           <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">

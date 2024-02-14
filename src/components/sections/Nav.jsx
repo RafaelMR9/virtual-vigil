@@ -58,7 +58,12 @@ export default function Nav() {
 
   return (
     <nav className="bg-slate-800 rounded-full shadow-xl flex justify-between items-center fixed top-0 left-0 right-0 px-8 py-4 mt-4 mx-10 z-[999]">
-      <Link href="#home" className="flex items-center gap-1 font-bold text-2xl"><FaShieldVirus /> Virtual Vigil</Link>
+      <Link 
+        href="#home"
+        onClick={(e) => handleScrollToSection(e, 'home')} 
+        className="flex items-center gap-1 font-bold text-2xl">
+        <FaShieldVirus /> Virtual Vigil
+      </Link>
       <button 
         type="button" 
         className="inline-flex items-center p-2 w-8 h-8 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" 

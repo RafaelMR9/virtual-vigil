@@ -2,8 +2,8 @@
 export default function Contact() {
   return (
     <section id="contact" className="relative min-h-screen px-8 md:px-20 lg:px-32 mt-24 pb-10 overflow-hidden">
-      <svg viewBox="0 0 1024 1024" className="absolute -right-[20rem] top-18 -z-1 h-[38rem] w-[38rem] [mask-image:radial-gradient(closest-side,white,transparent)]">
-        <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.5" />
+      <svg viewBox="0 0 1024 1024" className="block absolute -right-[20rem] top-18 -z-10 h-[38rem] w-[38rem] [mask-image:radial-gradient(closest-side,white,transparent)]">
+        <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.3" />
         <defs>
           <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
             <stop stopColor="#7775D6" />
@@ -11,7 +11,7 @@ export default function Contact() {
           </radialGradient>
         </defs>
       </svg>
-      <svg viewBox="0 0 1024 1024" className="absolute -left-[30rem] top-[12rem] -z-1 h-[64rem] w-[64rem] [mask-image:radial-gradient(closest-side,white,transparent)]">
+      <svg viewBox="0 0 1024 1024" className="hidden md:block absolute -left-[42rem] top-[12rem] -z-10 h-[64rem] w-[64rem] [mask-image:radial-gradient(closest-side,white,transparent)]">
         <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.3" />
         <defs>
           <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">

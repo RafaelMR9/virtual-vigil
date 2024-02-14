@@ -9,8 +9,17 @@ import { SiFastly } from "react-icons/si"
 export default function Services() {
   return (
     <section id="services" className="px-10 pb-10 relative overflow-hidden">
-      <svg viewBox="0 0 1024 1024" className="absolute -right-[16rem] top-18 -z-1 h-[32rem] w-[32rem] [mask-image:radial-gradient(closest-side,white,transparent)]">
+      <svg viewBox="0 0 1024 1024" className="absolute -right-[20rem] top-18 -z-10 h-[36rem] w-[36rem] [mask-image:radial-gradient(closest-side,white,transparent)]">
         <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.5" />
+        <defs>
+          <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+            <stop stopColor="#7775D6" />
+            <stop offset="1" stopColor="#E935C1" />
+          </radialGradient>
+        </defs>
+      </svg>
+      <svg viewBox="0 0 1024 1024" className="block md:hidden absolute right-[16rem] top-[42rem] -z-10 h-[38rem] w-[38rem] [mask-image:radial-gradient(closest-side,white,transparent)]">
+        <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.3" />
         <defs>
           <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
             <stop stopColor="#7775D6" />
