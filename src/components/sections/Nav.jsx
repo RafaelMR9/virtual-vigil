@@ -91,12 +91,6 @@ export default function Nav() {
           Planos
         </Link>
         <Link 
-          href="#depositions" 
-          onClick={(e) => handleScrollToSection(e, 'depositions')}
-          className={`relative after:bg-violet-400 after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 after:transition-all after:duration-300 cursor-pointer ${activeSection === 'depositions' ? 'after:w-full' : 'hover:after:w-full'}`}>
-          Depoimentos
-        </Link>
-        <Link 
           href="#contact" 
           onClick={(e) => handleScrollToSection(e, 'contact')}
           className={`relative after:bg-violet-400 after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 after:transition-all after:duration-300 cursor-pointer ${activeSection === 'contact' ? 'after:w-full' : 'hover:after:w-full'}`}>
