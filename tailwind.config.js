@@ -19,7 +19,33 @@ module.exports = {
       },
       boxShadow: {
         'nav': '0px 0px 10px 10px rgba(0,0,0,0.1)',
-      }
+      },
+      animation: {
+        fadedown: 'fadedown 1s ease-in-out',
+        fadeup: 'fadeup 1s ease-in-out',
+      },
+      keyframes: theme => ({
+        fadedown: {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-30px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          },
+        },
+        fadeup: {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(60px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          },
+        },
+      }),
     },
   },
   plugins: [],

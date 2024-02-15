@@ -12,7 +12,7 @@ export default function Hero() {
           </radialGradient>
         </defs>
       </svg>
-      <header>
+      <header className="animate-fadeup">
         <div className="flex justify-center items-center gap-5">
           <FaShieldVirus className="text-violet-600 brand-size"/>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold">Virtual <span className="text-violet-600">Vigil</span></h1>

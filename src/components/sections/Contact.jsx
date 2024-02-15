@@ -26,20 +26,20 @@ export default function Contact() {
         <div className="w-4 h-4 bg-violet-700 mx-2"></div>
         <div className="w-[25%] h-[1px] bg-violet-700"></div>
       </div>
-      <form>
+      <form className="text-black">
         <label htmlFor="name" className="block mb-2 text-center font-medium text-gray-300">Nome</label>
-        <input type="text" id="name" className="block w-full md:w-3/4 mx-auto p-3 mb-4 border border-violet-700 rounded-md focus:outline-none focus:ring focus:ring-violet-700" required />
+        <input type="text" id="name" className="block w-full md:w-3/4 lg:w-1/2 mx-auto p-3 mb-4 border border-violet-700 rounded-md focus:outline-none focus:ring focus:ring-violet-700" required />
 
         <label htmlFor="email" className="block mb-2 text-center font-medium text-gray-300">E-mail</label>
-        <input type="email" id="email" className="block w-full md:w-3/4 mx-auto p-3 mb-4 border border-violet-700 rounded-md focus:outline-none focus:ring focus:ring-violet-700" required />
+        <input type="email" id="email" className="block w-full md:w-3/4 lg:w-1/2 mx-auto p-3 mb-4 border border-violet-700 rounded-md focus:outline-none focus:ring focus:ring-violet-700" required />
 
         <label htmlFor="subject" className="block mb-2 text-center font-medium text-gray-300">Assunto</label>
-        <input type="text" id="subject" className="block w-full md:w-3/4 mx-auto p-3 mb-4 border border-violet-700 rounded-md focus:outline-none focus:ring focus:ring-violet-700" required />
+        <input type="text" id="subject" className="block w-full md:w-3/4 lg:w-1/2 mx-auto p-3 mb-4 border border-violet-700 rounded-md focus:outline-none focus:ring focus:ring-violet-700" required />
 
         <label htmlFor="message" className="block mb-2 text-center font-medium text-gray-300">Mensagem</label>
-        <textarea id="message" className="block w-full md:w-3/4 mx-auto p-3 mb-4 border border-violet-700 rounded-md focus:outline-none focus:ring focus:ring-violet-700" rows="5" required ></textarea>
+        <textarea id="message" className="block w-full md:w-3/4 mx-auto lg:w-1/2 p-3 mb-4 border border-violet-700 rounded-md focus:outline-none focus:ring focus:ring-violet-700" rows="5" required ></textarea>
 
-        <button type="submit" className="transition-colors easy-out duration-300 block w-full md:w-3/4 mx-auto font-bold p-4 bg-violet-700 hover:bg-violet-800 text-white rounded-md focus:outline-none focus:none">Enviar</button>
+        <button type="submit" className="transition-colors easy-out duration-300 block w-full md:w-3/4 lg:w-1/2 mx-auto font-bold p-4 bg-violet-700 hover:bg-violet-800 text-white rounded-md focus:outline-none focus:none">Enviar</button>
       </form>
     </section>
   )
