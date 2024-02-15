@@ -11,7 +11,7 @@ Aplicação Web Responsiva de uma Landing Page. A página possui várias seçõe
 **Tailwind CSS**: Framework de CSS utilizado para estilizar a página e tornar ela responsiva. O Tailwind CSS permite a criação rápida e fácil de estilos personalizados utilizando classes utilitárias.
 
 ## Link para Testar a Aplicação
-[Projeto Pong](https://rafaelmr9.github.io/Pong/)
+[Projeto Landing Page](https://virtual-vigil.vercel.app/)
 
 ![image](https://github.com/RafaelMR9/virtual-vigil/assets/24281310/73abafe7-7113-4c2c-881f-157431e5d7e5)
 
