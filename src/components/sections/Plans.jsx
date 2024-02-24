@@ -37,7 +37,7 @@ export default function Plans() {
 
   return (
     <section id="plans" className="relative px-8 mt-8 overflow-hidden">
-      <svg viewBox="0 0 1024 1024" className="hidden sm:block lg:hidden  absolute -left-[42rem] top-[12rem] -z-10 h-[64rem] w-[64rem] [mask-image:radial-gradient(closest-side,white,transparent)]">
+      <svg viewBox="0 0 1024 1024" className="hidden sm:block lg:hidden absolute -left-[42rem] top-[12rem] z-[1] h-[64rem] w-[64rem] [mask-image:radial-gradient(closest-side,white,transparent)]">
         <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.3" />
         <defs>
           <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
@@ -46,18 +46,18 @@ export default function Plans() {
           </radialGradient>
         </defs>
       </svg>
-      <h1 className="text-5xl font-extrabold text-center mb-4"><span className="text-violet-600">Nossos</span> Planos</h1>
-      <div className="flex items-center justify-center mb-10">
+      <h1 className="text-5xl font-extrabold text-center mb-4 relative z-[10]"><span className="text-violet-600">Nossos</span> Planos</h1>
+      <div className="flex items-center justify-center mb-10 relative z-[10]">
         <div className="w-[25%] h-[1px] bg-violet-700"></div>
         <div className="w-4 h-4 bg-violet-700 mx-2"></div>
         <div className="w-[25%] h-[1px] bg-violet-700"></div>
       </div>
-      <div className="block sm:hidden mx-auto">
+      <div className="block sm:hidden mx-auto relative z-[10]">
         <Slider {...settings}>
           {plans}
         </Slider>
       </div>
-      <div className="hidden sm:grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="hidden sm:grid grid-cols-1 lg:grid-cols-3 gap-8 relative z-[10]">
         {plans}
       </div>
       <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)} title="Dados de Pagamento">

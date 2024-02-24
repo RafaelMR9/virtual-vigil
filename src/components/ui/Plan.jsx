@@ -1,8 +1,8 @@
 export default function Plan({highlighted, title, price, serv1, serv2, serv3, serv4, serv5, serv6, onClick}) {
     return (
         <div className={`plan ${highlighted ? 'bg-violet-600' : 'bg-slate-800'} px-8 py-6 w-full sm:w-[28rem] lg:w-full mx-auto lg:mx-0`}>
-            <h2 className="text-xl font-bold mb-2">{title}</h2>
-            <p className="text-3xl sm:text-5xl lg:text-4xl xl:text-5xl font-semibold mb-4">R${price} <span className="text-base text-gray-500">/ mês</span></p>
+            <h2 className="text-lg sm:text-xl font-bold mb-2">{title}</h2>
+            <p className="text-2xl sm:text-5xl lg:text-4xl xl:text-5xl font-semibold mb-4">R${price} <span className='text-sm'>/mês</span></p>
             <hr className="mb-4"/>
             <ul className="text-sm sm:text-base list-disc font-semibold pl-4">
                 <li className={`${!serv1 && 'text-gray-500 line-through'} mb-2`}>Guardião Digital</li>

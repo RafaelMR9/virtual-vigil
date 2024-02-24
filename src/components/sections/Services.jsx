@@ -9,7 +9,7 @@ import { SiFastly } from "react-icons/si"
 export default function Services() {
   return (
     <section id="services" className="px-10 pb-10 relative overflow-hidden">
-      <svg viewBox="0 0 1024 1024" className="absolute -right-[20rem] top-18 -z-10 h-[36rem] w-[36rem] [mask-image:radial-gradient(closest-side,white,transparent)]">
+      <svg viewBox="0 0 1024 1024" className="absolute -right-[20rem] top-18 z-[1] h-[36rem] w-[36rem] [mask-image:radial-gradient(closest-side,white,transparent)]">
         <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.5" />
         <defs>
           <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
@@ -18,7 +18,7 @@ export default function Services() {
           </radialGradient>
         </defs>
       </svg>
-      <svg viewBox="0 0 1024 1024" className="block md:hidden absolute right-[16rem] top-[42rem] -z-10 h-[38rem] w-[38rem] [mask-image:radial-gradient(closest-side,white,transparent)]">
+      <svg viewBox="0 0 1024 1024" className="block md:hidden absolute right-[16rem] top-[42rem] z-[1] h-[38rem] w-[38rem] [mask-image:radial-gradient(closest-side,white,transparent)]">
         <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.3" />
         <defs>
           <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
@@ -27,20 +27,20 @@ export default function Services() {
           </radialGradient>
         </defs>
       </svg>
-      <h1 className="text-5xl font-extrabold text-center mb-4">Nossos <span className="text-violet-600">Serviços</span></h1>
-      <p className="text-center text-gray-400 mb-4">
+      <h1 className="text-5xl font-extrabold text-center mb-4 relative z-[10]">Nossos <span className="text-violet-600">Serviços</span></h1>
+      <p className="text-center text-gray-400 mb-4 relative z-[10]">
         A Virtual Vigil é pioneira em soluções de segurança digital, oferecendo desde proteção antivírus até criptografia avançada e 
         monitoramento de rede em tempo real. Com um compromisso inabalável com a inovação e a satisfação do cliente, nossa equipe de 
         especialistas está dedicada a desenvolver tecnologias que protegem e empoderam usuários em todo o mundo, garantindo uma 
         experiência online segura e sem preocupações. Priorizamos a personalização de nossos serviços para atender às necessidades 
         únicas de cada cliente, estabelecendo novos padrões de excelência em segurança virtual.
       </p>
-      <div className="flex items-center justify-center mb-10">
+      <div className="flex items-center justify-center mb-10 relative z-[10]">
         <div className="w-[25%] h-[1px] bg-violet-700"></div>
         <div className="w-4 h-4 bg-violet-700 mx-2"></div>
         <div className="w-[25%] h-[1px] bg-violet-700"></div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 xl:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 xl:gap-8 relative z-[10]">
         <Service 
           icon={<MdSecurity size={100}/>} 
           title="Guardião Digital" 
