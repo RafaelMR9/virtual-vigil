@@ -13,7 +13,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="relative px-8 md:px-20 lg:px-32 mt-24 pb-4 sm:pb-10 overflow-hidden">
+    <section id="contact" className="relative px-8 md:px-20 lg:px-32 mt-24 pb-10 overflow-hidden">
       <svg viewBox="0 0 1024 1024" className="block absolute -right-[20rem] top-18 z-[1] h-[38rem] w-[38rem] [mask-image:radial-gradient(closest-side,white,transparent)]">
         <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.3" />
         <defs>
