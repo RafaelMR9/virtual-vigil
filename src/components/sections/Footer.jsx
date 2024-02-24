@@ -1,10 +1,19 @@
 "use client"
 
 import Link from 'next/link'
+import HamburgerMenu from '../ui/HamburgerMenu'
 import { FaLinkedin, FaFacebook, FaWhatsapp, FaTwitter } from "react-icons/fa"
 import { FaShieldVirus } from "react-icons/fa6"
+import { useState } from 'react'
 
 export default function Footer() {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault()
+    setIsMenuOpen(true)
+  }
 
   const handleScrollToSection = (e, sectionId) => {
     e.preventDefault()
@@ -46,9 +55,9 @@ export default function Footer() {
         <div>
           <p className='font-medium text-lg mb-5'>Jornal</p>
           <div className="flex flex-col gap-8">
-            <form className="flex flex-col gap-3">
-              <input className="text-black rounded-md focus:outline-none focus:ring focus:ring-violet-700 p-2" type="text" placeholder="Digite seu email"/>
-              <button className='transition-colors easy-out duration-300 font-semibold bg-violet-600 hover:bg-violet-700 rounded-lg px-4 py-2'>Enviar</button>
+            <form className="flex flex-col gap-3" onSubmit={handleFormSubmit}>
+              <input className="text-black rounded-md focus:outline-none focus:ring focus:ring-violet-700 p-2" type="email" placeholder="Digite seu email" required />
+              <button type='submit' className='transition-colors easy-out duration-300 font-semibold bg-violet-600 hover:bg-violet-700 rounded-lg px-4 py-2'>Enviar</button>
             </form>
             <div className="flex items-center gap-4">
               <FaLinkedin size={35} className='cursor-pointer transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300'/>
@@ -64,6 +73,11 @@ export default function Footer() {
         <p>@ Copyright 2024. Todos os direitos reservados.</p>
         <p>Desenvolvido com ❤️ por Rafael Ribeiro</p>
       </div>
+      <HamburgerMenu 
+        isOpen={isMenuOpen}
+        setIsOpen={setIsMenuOpen} 
+        text="E-Mail Cadastrado em Nosso Jornal!"
+      />
     </footer>
   )
 }

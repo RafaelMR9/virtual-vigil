@@ -2,11 +2,24 @@
 
 import Slider from 'react-slick'
 import Plan from '../ui/Plan'
+import Modal from '../ui/Modal'
+import HamburgerMenu from '../ui/HamburgerMenu'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import { MdEmail, MdPerson, MdCreditCard, MdLock, MdDateRange } from "react-icons/md"
+import { useState } from 'react'
 
 export default function Plans() {
   
+  const [modalOpen, setModalOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault()
+    setModalOpen(false)
+    setIsMenuOpen(true)
+  }
+
   const settings = {
     className: "center",
     centerMode: true,
@@ -17,9 +30,9 @@ export default function Plans() {
   }
 
   const plans = [
-    <Plan key="plano-basico" title='Plano Básico' price={19.99} serv1 serv2 />,
-    <Plan key="plano-avancado" title='Plano Avançado' price={29.99} serv1 serv2 serv3 serv4 highlighted />,
-    <Plan key="plano-premium" title='Plano Premium' price={39.99} serv1 serv2 serv3 serv4 serv5 serv6 />
+    <Plan key="plano-basico" title='Plano Básico' price={19.99} serv1 serv2 onClick={() => setModalOpen(true)} />,
+    <Plan key="plano-avancado" title='Plano Avançado' price={29.99} serv1 serv2 serv3 serv4 highlighted onClick={() => setModalOpen(true)} />,
+    <Plan key="plano-premium" title='Plano Premium' price={39.99} serv1 serv2 serv3 serv4 serv5 serv6 onClick={() => setModalOpen(true)} />
   ]
 
   return (
@@ -47,6 +60,36 @@ export default function Plans() {
       <div className="hidden sm:grid grid-cols-1 lg:grid-cols-3 gap-8">
         {plans}
       </div>
+      <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)} title="Dados de Pagamento">
+        <form onSubmit={handleFormSubmit} className='flex flex-col gap-5'>
+          <div className="flex items-center gap-4">
+              <MdEmail size={40} />
+              <input className="text-black rounded-md focus:outline-none focus:ring focus:ring-violet-700 p-2 w-full" type="email" placeholder="Digite seu email" required />
+          </div>
+          <div className="flex items-center gap-4">
+              <MdPerson size={40} />
+              <input className="text-black rounded-md focus:outline-none focus:ring focus:ring-violet-700 p-2 w-full" type="text" placeholder="Nome no Cartão" required />
+          </div>
+          <div className="flex items-center gap-4">
+              <MdCreditCard size={40} />
+              <input className="text-black rounded-md focus:outline-none focus:ring focus:ring-violet-700 p-2 w-full" type="text" placeholder="Número do Cartão" required />
+          </div>
+          <div className="flex items-center gap-4">
+              <MdDateRange size={40} />
+              <input className="text-black rounded-md focus:outline-none focus:ring focus:ring-violet-700 p-2 w-full" type="text" placeholder="Data de Validade (MM/AA)" required />
+          </div>
+          <div className="flex items-center gap-4">
+              <MdLock size={40} />
+              <input className="text-black rounded-md focus:outline-none focus:ring focus:ring-violet-700 p-2 w-full" type="text" placeholder="CVV" required />
+          </div>
+          <button type='submit' className='transition-colors easy-out duration-300 font-semibold bg-violet-600 hover:bg-violet-700 rounded-lg px-4 py-3'>Finalizar Compra</button>
+        </form>
+      </Modal>
+      <HamburgerMenu 
+        isOpen={isMenuOpen}
+        setIsOpen={setIsMenuOpen} 
+        text="Compra Realizada com Sucesso!"
+      />
     </section>
   )
 }

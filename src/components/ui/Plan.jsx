@@ -1,4 +1,4 @@
-export default function Plan({highlighted, title, price, serv1, serv2, serv3, serv4, serv5, serv6}) {
+export default function Plan({highlighted, title, price, serv1, serv2, serv3, serv4, serv5, serv6, onClick}) {
     return (
         <div className={`plan ${highlighted ? 'bg-violet-600' : 'bg-slate-800'} px-8 py-6 w-full sm:w-[28rem] lg:w-full mx-auto lg:mx-0`}>
             <h2 className="text-xl font-bold mb-2">{title}</h2>
@@ -12,7 +12,7 @@ export default function Plan({highlighted, title, price, serv1, serv2, serv3, se
                 <li className={`${!serv5 && 'text-gray-500 line-through'} mb-2`}>Escudo de Dados</li>
                 <li className={`${!serv6 && 'text-gray-500 line-through'} mb-2`}>Consultor de Privacidade</li>
             </ul>
-            <button className={`animation-colors easy-out duration-200 block w-full ${highlighted ? 'bg-violet-400 hover:bg-violet-200  hover:text-violet-600' : 'bg-slate-700 hover:bg-slate-500'} text-white text-xl font-semibold p-4 mt-8`}>Comprar</button>
+            <button onClick={onClick} className={`animation-colors easy-out duration-200 block w-full ${highlighted ? 'bg-violet-400 hover:bg-violet-200  hover:text-violet-600' : 'bg-slate-700 hover:bg-slate-500'} text-white text-xl font-semibold p-4 mt-8`}>Comprar</button>
         </div>
     ) 
 }
